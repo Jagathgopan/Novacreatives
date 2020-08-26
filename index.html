@@ -13,7 +13,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
-    <meta name="keywords" content="Promote Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <meta name="keywords" content="outdoor advertising,best advertising agency,branding,hoardings,kerala,Trivandrum,Thiruvananthapuram hoardings,Flex board agency,flex company in Trivandrum" />
     <!-- //Meta tag Keywords -->
     <!-- Custom-Files -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -47,15 +47,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <input type="checkbox" id="drop" />
                 <ul class="menu ml-auto mt-1">
                     <li class="active"><a href="index.html">Home</a></li>
-                    <li class=""><a href="#about">About us</a></li>
-                    <li class=""><a href="#services">Services</a></li>
+                    <li class=""><a href="#about">Services</a></li>
                     <li class=""><a href="#portfolio">Portfolio</a></li>
-                    <li class=""><a href="#contact">Contact</a></li>
+                    <li class=""><a href="#contact1">Contact</a></li>
                     <!--<li class="last-grid"><a href="#register">Register</a></li>-->
                 </ul>
             </nav>
             <!-- //nav -->
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </header>
     <!-- //header -->
     <!-- banner -->
@@ -239,8 +239,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <section class="team py-5" id="team">
         <div class="container py-md-5 py-3">
             <div class="title-desc text-center">
-                <h5 class="heading heading1 mb-2"> Our Team</h5>
-                <h3 class="heading heading1 mb-sm-5 mb-3">Our Expert Minds</h3>
+                <h5 class="heading heading1 mb-2"></h5>
+                <h3 class="heading heading1 mb-sm-5 mb-3">Our team</h3>
             </div>
             <div class="row team-grid">
                    <div class="col-lg-2 col-sm-6 mb-4">
@@ -264,7 +264,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <span class="post">Managing Director</span>
                             <ul class="social">
                                 <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -276,8 +276,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <h3 class="title">Jagath Gopan</h3>
                             <span class="post"> General Manager</span>
                             <ul class="social">
-                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="https://www.facebook.com/jagathgopan.gb/"target=”_blank” ><span class="fa fa-facebook"></span></a></li>
+                                <li><a href="http://www.linkedin.com/in/jagathgopan/"target=”_blank” ><span class="fa fa-linkedin"></span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -475,31 +475,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <section class="text py-5" id="register">
         <div class="container py-md-5 py-3 text-center">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12" id="contact1">
                     <h2 class="mb-4 heading">The Outdoor Advertising <span>Specialist</span>.</h2>
                     <p>
                         Our aim is to strengthen the relation between brands and consumers in kerala. We provide the most cost effective outdoor campaigns using best tools and systems and creating the most innovative solutions
                     </p>
-                    <a href="#contact" class="btn mr-3"> Work With Us</a>
-                    <a href="#portfolio" class="btn"> Projects </a>
+                    
                 </div>
                 <div class="col-md-6 padding">
                     <!-- banner form -->
-                    <form action="#" method="post">
+                    <form id="submit-form" >
                         <h5 class="mb-3">Register Here</h5>
                         <div class="form-style-w3ls">
                             <input placeholder="Your Name" name="name" type="text" required="">
                             <input placeholder="Your Email Id" name="email" type="email" required="">
                             <input placeholder="Contact Number" name="number" type="text" required="">
-                            <select>
-                                <option value="0">Business Type</option>
-                                <option value="1">Corporate</option>
-                                <option value="1">Partnership</option>
-                                <option value="1">Other</option>
-                            </select>
+                            <input placeholder="your message" name="number" type="text" required="">
+                            
                             <!--<input placeholder="Password" name="password" type="password" required=""> -->
                             <button class="btn"> Get registered</button>
-                            <span>By registering, you agree to our <a href="#">Terms & Conditions.</a></span>
+                           
                         </div>
                     </form>
                     <!-- //banner form -->
@@ -540,8 +535,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </section>-->
     <!-- testimonials -->
-    <!-- Contact page -->
-    <section class="contact py-5" id="contact">
+    <!-- Contact page 
+   <section class="contact py-5" id="contact">
         <div class="container py-md-5 py-5">
             <h5 class="heading mb-2">Contact Us</h5>
             <h3 class="heading mb-sm-5 mb-3">Reach out to us </h3>
@@ -570,7 +565,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <!-- //Contact page -->
     <!-- footer -->
     <footer class="py-md-5 py-3">
@@ -626,7 +621,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     <!-- move top -->
 
-
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbyINbhjkCY05kyUAO4M5b7-OhJRJfZinVC7Cpe5/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 
 </body>
 </html>
